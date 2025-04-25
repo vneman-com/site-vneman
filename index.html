@@ -24,7 +24,7 @@
     >
       <!-- Header -->
       <header
-        class="flex items-center justify-between bg-white mx-6 p-4 rounded-full"
+        class="sticky top-6 flex items-center justify-between bg-white mx-6 p-4 rounded-full shadow-xl z-40"
       >
         <div class="">
           <img
@@ -33,7 +33,7 @@
             class="w-32"
           />
         </div>
-        <button class="text-white">
+        <button class="text-white menu-toggle" id="menu-toggle">
           <svg
             class="w-10 h-10"
             fill="none"
@@ -46,6 +46,14 @@
             <path d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
+        <div id="nav-links" class="nav-links">
+          <ul>
+            <li><a href="#">Comment ça marche</a></li>
+            <li><a href="#">Mon invitation</a></li>
+            <li><a href="#">Connexion</a></li>
+            <li><a href="#">Ouvrir un compte</a></li>
+          </ul>
+        </div>
       </header>
 
       <!-- Hero Section -->
