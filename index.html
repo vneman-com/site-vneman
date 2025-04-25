@@ -1,9 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>VNEMAN - Bienvenu.e sur le site</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://res.cloudinary.com/dhttj3w2f/image/upload/v1745077514/wedding/vneman_icon_yrgkj6.png"
+    />
   </head>
-  <body></body>
+  <body class="text-white">
+    <div
+      class="h-screen pt-6"
+      style="
+        background-image: url('/images/hero-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      "
+    >
+      <!-- Header -->
+      <header
+        class="flex items-center justify-between bg-white mx-6 p-4 rounded-full"
+      >
+        <div class="">
+          <img
+            src="https://res.cloudinary.com/dhttj3w2f/image/upload/v1745076481/wedding/vneman_dp0mjx.png"
+            alt="Logo Vneman"
+            class="w-32"
+          />
+        </div>
+        <button class="text-white">
+          <svg
+            class="w-10 h-10"
+            fill="none"
+            stroke="var(--primary-color)"
+            stroke-width="2"
+            viewBox="0 0 32 32"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="text-left mt-12 mx-6 flex items-center flex-col gap-6">
+        <div class="flex flex-col gap-10 justify-center">
+          <div class="relative">
+            <img
+              src="/images/circle.png"
+              alt=""
+              class="absolute right-0"
+              style="z-index: 0; top: -4vh"
+            />
+            <h1
+              class="text-[2rem] font-bold leading-[1] text-white bg-cover bg-center bg-no-repeat pl-8 relative hero-text"
+              style="z-index: 1"
+            >
+              Organise <br />
+              <span class="text-cyan-400">Tes évènements</span><br />
+              <span class="text-white">en quelques clics</span>
+            </h1>
+          </div>
+          <div>
+            <div class="ml-6 text-sm text-gray-200">
+              Propose la meilleure expérience à tes invités avec nos solutions
+              d’invitation en ligne, gestion des tables, gestion des boissons.
+            </div>
+
+            <button
+              id="startBtn"
+              class="mt-6 bg-white text-[var(--primary-color)] text-xs py-6 font-bold px-6 py-3 rounded-full flex justify-self-center w-[60vw] place-content-center"
+            >
+              Commencer maintenant
+            </button>
+          </div>
+        </div>
+
+        <img src="/images/hero.png" alt="Hero Events Image" class="w-[90vw]" />
+      </section>
+    </div>
+
+    <script src="/js/scripts.js"></script>
+  </body>
 </html>
