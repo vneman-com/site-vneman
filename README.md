@@ -1,3 +1,4 @@
 # Welcome to _Vneman.com_
 
-See github  pages [website](https://vnemancd.github.io/site-vneman/)
+- DEV: See github  pages [website](https://vnemancd.github.io/site-vneman)
+- PROD: live [website](https://vneman.com)
